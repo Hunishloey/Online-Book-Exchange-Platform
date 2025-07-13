@@ -4,19 +4,23 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  
+
   // Add these server and preview configurations
   server: {
-    host: true, // This will expose to all network interfaces
-    port: 5173, // Development port
-    strictPort: true // Exit if port is occupied
+    host: true,
+    port: 5173,
+    allowedHosts: [
+      'online-book-exchange-platform-2.onrender.com'
+    ]
   },
   preview: {
-    host: true, // Important for Render
-    port: 10000, // Production preview port (must match Render settings)
-    strictPort: true
+    port: 10000,
+    host: true,
+    allowedHosts: [
+      'online-book-exchange-platform-2.onrender.com' // Allow Render's domain
+    ]
   },
-  
+
   // Optional production build settings
   build: {
     outDir: 'dist',
