@@ -14,11 +14,9 @@ export default defineConfig({
     ]
   },
   preview: {
-    port: 10000,
     host: true,
-    allowedHosts: [
-      'online-book-exchange-platform-2.onrender.com' // Allow Render's domain
-    ]
+    port: 10000,
+    allowedHosts: 'all' // ⚠️ Allows any host (less secure)
   },
 
   // Optional production build settings
