@@ -1,0 +1,18 @@
+@import "tailwindcss";
+.swiper-pagination-bullet {
+    background: #3b82f6 !important; /* Tailwind's blue-500 */
+}
+
+.swiper-pagination-bullet-active {
+    background: #000 !important;
+}
+
+a, .link {
+  color: inherit;
+}
+
+a:hover, .link:hover {
+  color: inherit;
+}
+
+

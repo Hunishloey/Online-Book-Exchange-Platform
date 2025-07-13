@@ -1,0 +1,1 @@
+use color like rose-100 to 900 and gray-100 to 900 and black-100 to 900 and white violet etc colors
